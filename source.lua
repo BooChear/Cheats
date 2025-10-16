@@ -352,108 +352,11 @@ function DiscordLib:Window(text)
 		end
 	)
 
-	TextLabel.Parent = CloseSettingsBtn
-	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	TextLabel.BackgroundTransparency = 1.000
-	TextLabel.Position = UDim2.new(-0.0666666701, 0, 1.06666672, 0)
-	TextLabel.Size = UDim2.new(0, 34, 0, 22)
-	TextLabel.Font = Enum.Font.GothamSemibold
-	TextLabel.Text = "rightctrl"
-	TextLabel.TextColor3 = Color3.fromRGB(255, 69, 0)
-	TextLabel.TextSize = 11.000
-
 	UserPanel.Name = "UserPanel"
 	UserPanel.Parent = SettingsHolder
 	UserPanel.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- Very black
 	UserPanel.Position = UDim2.new(0.365638763, 0, 0.130666673, 0)
 	UserPanel.Size = UDim2.new(0, 362, 0, 164)
-
-	UserSettingsPad.Name = "UserSettingsPad"
-	UserSettingsPad.Parent = UserPanel
-	UserSettingsPad.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- Very black
-	UserSettingsPad.Position = UDim2.new(0.0331491716, 0, 0.568140388, 0)
-	UserSettingsPad.Size = UDim2.new(0, 337, 0, 56)
-
-	UserSettingsPadCorner.Name = "UserSettingsPadCorner"
-	UserSettingsPadCorner.Parent = UserSettingsPad
-
-	UsernameText.Name = "UsernameText"
-	UsernameText.Parent = UserSettingsPad
-	UsernameText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	UsernameText.BackgroundTransparency = 1.000
-	UsernameText.Position = UDim2.new(0.0419999994, 0, 0.154714286, 0)
-	UsernameText.Size = UDim2.new(0, 65, 0, 19)
-	UsernameText.Font = Enum.Font.GothamBold
-	UsernameText.Text = "USERNAME"
-	UsernameText.TextColor3 = Color3.fromRGB(255, 69, 0)
-	UsernameText.TextSize = 11.000
-	UsernameText.TextXAlignment = Enum.TextXAlignment.Left
-
-	UserSettingsPadUserTag.Name = "UserSettingsPadUserTag"
-	UserSettingsPadUserTag.Parent = UserSettingsPad
-	UserSettingsPadUserTag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	UserSettingsPadUserTag.BackgroundTransparency = 1.000
-	UserSettingsPadUserTag.Position = UDim2.new(0.0419999994, 0, 0.493999988, 0)
-	UserSettingsPadUserTag.Size = UDim2.new(0, 65, 0, 19)
-
-	UserSettingsPadUser.Name = "UserSettingsPadUser"
-	UserSettingsPadUser.Parent = UserSettingsPadUserTag
-	UserSettingsPadUser.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	UserSettingsPadUser.BackgroundTransparency = 1.000
-	UserSettingsPadUser.Font = Enum.Font.Gotham
-	UserSettingsPadUser.TextColor3 = Color3.fromRGB(255, 69, 0)
-	UserSettingsPadUser.TextSize = 16.000
-	UserSettingsPadUser.TextXAlignment = Enum.TextXAlignment.Left
-	UserSettingsPadUser.Text = user
-	UserSettingsPadUser.Size = UDim2.new(0, UserSettingsPadUser.TextBounds.X + 2, 0, 19)
-
-	UserSettingsPadUserTagLayout.Name = "UserSettingsPadUserTagLayout"
-	UserSettingsPadUserTagLayout.Parent = UserSettingsPadUserTag
-	UserSettingsPadUserTagLayout.FillDirection = Enum.FillDirection.Horizontal
-	UserSettingsPadUserTagLayout.SortOrder = Enum.SortOrder.LayoutOrder
-
-	UserSettingsPadTag.Name = "UserSettingsPadTag"
-	UserSettingsPadTag.Parent = UserSettingsPadUserTag
-	UserSettingsPadTag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	UserSettingsPadTag.BackgroundTransparency = 1.000
-	UserSettingsPadTag.Position = UDim2.new(0.0419999994, 0, 0.493999988, 0)
-	UserSettingsPadTag.Size = UDim2.new(0, 65, 0, 19)
-	UserSettingsPadTag.Font = Enum.Font.Gotham
-	UserSettingsPadTag.Text = "#" .. tag
-	UserSettingsPadTag.TextColor3 = Color3.fromRGB(255, 69, 0)
-	UserSettingsPadTag.TextSize = 16.000
-	UserSettingsPadTag.TextXAlignment = Enum.TextXAlignment.Left
-
-	EditBtn.Name = "EditBtn"
-	EditBtn.Parent = UserSettingsPad
-	EditBtn.BackgroundColor3 = Color3.fromRGB(255, 69, 0) -- Orange button
-	EditBtn.Position = UDim2.new(0.797671914, 0, 0.232142866, 0)
-	EditBtn.Size = UDim2.new(0, 55, 0, 30)
-	EditBtn.Font = Enum.Font.Gotham
-	EditBtn.Text = "Edit"
-	EditBtn.TextColor3 = Color3.fromRGB(255, 255, 255) -- White text for visibility
-	EditBtn.TextSize = 16.000
-	EditBtn.AutoButtonColor = false
-	
-	EditBtn.MouseEnter:Connect(function()
-		TweenService:Create(
-			EditBtn,
-			TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-			{BackgroundColor3 = Color3.fromRGB(204, 55, 0)} -- Darker orange hover
-		):Play()
-	end)
-	
-	EditBtn.MouseLeave:Connect(function()
-		TweenService:Create(
-			EditBtn,
-			TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-			{BackgroundColor3 = Color3.fromRGB(255, 69, 0)}
-		):Play()
-	end)
-
-	EditBtnCorner.CornerRadius = UDim.new(0, 3)
-	EditBtnCorner.Name = "EditBtnCorner"
-	EditBtnCorner.Parent = EditBtn
 
 	UserPanelUserIcon.Name = "UserPanelUserIcon"
 	UserPanelUserIcon.Parent = UserPanel
