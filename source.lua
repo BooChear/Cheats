@@ -263,8 +263,7 @@ function DiscordLib:Window(text)
 	ServersHoldFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	ServersHoldFrame.BackgroundTransparency = 1.000
 	ServersHoldFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
-	ServersHoldFrame.Size = UDim2.new(0, 71, 0, 396)
-	ServersHoldFrame.Visible = false -- Hide Server element
+	ServersHoldFrame.Size = UDim2.new(0, 0, 0, 0)
 
 	ServersHold.Name = "ServersHold"
 	ServersHold.Parent = ServersHoldFrame
