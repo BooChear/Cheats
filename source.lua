@@ -2082,23 +2082,27 @@ function DiscordLib:Window(text)
 			-- ChannelBtn.MouseLeave:Connect(function() ... end)
 			
 			ChannelBtn.MouseButton1Click:Connect(function()
-				for i, v in next, ChannelContentFrame:GetChildren() do
-					if v.Name == "ChannelHolder" then
-						v.Visible = false
-					end
-					ChannelHolder.Visible = true
-				end
-				for i, v in next, ServerChannelHolder:GetChildren() do
-					if v.ClassName == "TextButton" then
-						v.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- Very black
-						v.ChannelBtnTitle.TextColor3 = Color3.fromRGB(255, 69, 0)
-					end
-					ServerFrame.Visible = true
-				end
-				ChannelTitle.Text = text
-				ChannelBtn.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- Very black
-				ChannelBtnTitle.TextColor3 = Color3.fromRGB(255, 69, 0)
-				currentchanneltoggled = ChannelBtn.Name
+			    for i, v in pairs(ChannelContentFrame:GetChildren()) do
+			        if v.Name == "ChannelHolder" then
+			            v.Visible = false
+			        end
+			    end
+			    if ChannelHolder then
+			        ChannelHolder.Visible = true
+			    end
+			    for i, v in pairs(ServerChannelHolder:GetChildren()) do
+			        if v.ClassName == "TextButton" then
+			            v.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- Very black
+			            v.ChannelBtnTitle.TextColor3 = Color3.fromRGB(255, 69, 0)
+			        end
+			    end
+			    if ServerFrame then
+			        ServerFrame.Visible = true
+			    end
+			    ChannelTitle.Text = text
+			    ChannelBtn.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- Very black
+			    ChannelBtnTitle.TextColor3 = Color3.fromRGB(255, 69, 0)
+			    currentchanneltoggled = ChannelBtn.Name
 			end)
 			
 			if fc == false then
