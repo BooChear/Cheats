@@ -149,15 +149,6 @@ function DiscordLib:Window(text)
 	Title.TextSize = 16.000
 	Title.TextXAlignment = Enum.TextXAlignment.Left
 
-	local DiscordButton = Instance.new("ImageButton")
-	DiscordButton.Parent = TopFrame
-	DiscordButton.Size = UDim2.new(0, 20, 0, 20)
-	DiscordButton.Position = UDim2.new(0.9, 0, 0, 0)
-	DiscordButton.BackgroundTransparency = 1
-	DiscordButton.MouseButton1Click:Connect(function()
-		setclipboard("https://discord.gg/9My7CdUyqR") -- вставь сюда ссылку
-	end)
-
 	CloseBtn.Name = "CloseBtn"
 	CloseBtn.Parent = TopFrame
 	CloseBtn.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
@@ -3251,5 +3242,28 @@ function DiscordLib:Window(text)
 		return ChannelHold
 	end
 	return ServerHold
+
+	local DiscordLink = Instance.new("TextButton")
+		DiscordLink.Parent = MainFrame
+		DiscordLink.BackgroundTransparency = 1
+		DiscordLink.Size = UDim2.new(0, 200, 0, 30)
+		DiscordLink.Position = UDim2.new(0, 10, 1, -35)
+		DiscordLink.Text = "Join my Discord!"
+		DiscordLink.TextColor3 = Color3.fromRGB(255, 69, 0)
+		DiscordLink.TextSize = 16
+		DiscordLink.Font = Enum.Font.GothamBold
+
+		local DiscordIcon = Instance.new("ImageLabel")
+		DiscordIcon.Parent = DiscordLink
+		DiscordIcon.BackgroundTransparency = 1
+		DiscordIcon.Size = UDim2.new(0, 24, 0, 24)
+		DiscordIcon.Position = UDim2.new(0, -28, 0, 3)
+		DiscordIcon.Image = "rbxassetid://6035067836" -- иконка Discord
+
+		DiscordLink.MouseButton1Click:Connect(function()
+			setclipboard("https://discord.gg/9My7CdUyqR")
+		end)
+
+
 end
 return DiscordLib
