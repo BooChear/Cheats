@@ -2089,7 +2089,7 @@ function DiscordLib:Window(text)
 					ChannelHolder.Visible = true
 				end
 				for i, v in next, ServerChannelHolder:GetChildren() do
-					if v.ClassName = "TextButton" then
+					if v.ClassName == "TextButton" then
 						v.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- Very black
 						v.ChannelBtnTitle.TextColor3 = Color3.fromRGB(255, 69, 0)
 					end
