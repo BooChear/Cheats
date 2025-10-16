@@ -105,7 +105,6 @@ function DiscordLib:Window(text)
 	local UserImage = Instance.new("ImageLabel")
 	local UserCircleImage = Instance.new("ImageLabel")
 	local UserName = Instance.new("TextLabel")
-	local UserTag = Instance.new("TextLabel")
 	local ServersHoldFrame = Instance.new("Frame")
 	local ServersHold = Instance.new("ScrollingFrame")
 	local ServersHoldLayout = Instance.new("UIListLayout")
@@ -241,19 +240,6 @@ function DiscordLib:Window(text)
 	UserName.TextSize = 16.000
 	UserName.TextXAlignment = Enum.TextXAlignment.Left
 	UserName.ClipsDescendants = true
-
-	UserTag.Name = "UserTag"
-	UserTag.Parent = Userpad
-	UserTag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	UserTag.BackgroundTransparency = 1.000
-	UserTag.BorderSizePixel = 0
-	UserTag.Position = UDim2.new(0.230000004, 0, 0.455000013, 0)
-	UserTag.Size = UDim2.new(0, 95, 0, 17)
-	UserTag.Font = Enum.Font.Gotham
-	UserTag.TextColor3 = Color3.fromRGB(255, 69, 0)
-	UserTag.TextSize = 16.000
-	UserTag.TextTransparency = 0.300
-	UserTag.TextXAlignment = Enum.TextXAlignment.Left
 	
 	UserName.Text = user
 	
@@ -271,8 +257,8 @@ function DiscordLib:Window(text)
 	ServersHold.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	ServersHold.BackgroundTransparency = 1.000
 	ServersHold.BorderSizePixel = 0
-	ServersHold.Position = UDim2.new(-0.000359333731, 0, 0.0580808073, 0)
-	ServersHold.Size = UDim2.new(0, 71, 0, 373)
+	ServersHold.Position = UDim2.new(0, 0, 0, 0)
+	ServersHold.Size = UDim2.new(0, 0, 0, 0)
 	ServersHold.ScrollBarThickness = 1
 	ServersHold.ScrollBarImageTransparency = 1
 	ServersHold.CanvasSize = UDim2.new(0, 0, 0, 0)
@@ -280,7 +266,7 @@ function DiscordLib:Window(text)
 	ServersHoldLayout.Name = "ServersHoldLayout"
 	ServersHoldLayout.Parent = ServersHold
 	ServersHoldLayout.SortOrder = Enum.SortOrder.LayoutOrder
-	ServersHoldLayout.Padding = UDim.new(0, 7)
+	ServersHoldLayout.Padding = UDim.new(0, 0)
 
 	ServersHoldPadding.Name = "ServersHoldPadding"
 	ServersHoldPadding.Parent = ServersHold
