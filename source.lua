@@ -280,7 +280,7 @@ function DiscordLib:Window(text)
 	ServersHoldLayout.Name = "ServersHoldLayout"
 	ServersHoldLayout.Parent = ServersHold
 	ServersHoldLayout.SortOrder = Enum.SortOrder.LayoutOrder
-	ServersHoldLayout.Padding = UDim.new(0, 7)
+	ServersHoldLayout.Padding = UDim.new(0, 0)
 
 	ServersHoldPadding.Name = "ServersHoldPadding"
 	ServersHoldPadding.Parent = ServersHold
