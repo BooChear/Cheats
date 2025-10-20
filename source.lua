@@ -1692,7 +1692,7 @@ function DiscordLib:Window(text)
 		ServerIco.Image = ""
 
 		local ServerIcoCorner = Instance.new("UICorner")
-		ServerIcoCorner.CornerRadius = UDim.new(0.4, 0)
+		ServerIcoCorner.CornerRadius = UDim.new(0.3, 0)
 		ServerIcoCorner.Name = "ServerIcoCorner"
 		ServerIcoCorner.Parent = ServerIco
 		
