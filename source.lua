@@ -229,7 +229,7 @@ function DiscordLib:Window(text)
 	UserCircleImage.Image = "rbxassetid://4031889928"
 	UserCircleImage.ImageColor3 = Color3.fromRGB(41, 43, 47)
 	
-	UserName.Name = "UserName"
+	UserName.Name = "Юзернейм"
 	UserName.Parent = Userpad
 	UserName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	UserName.BackgroundTransparency = 1.000
@@ -547,7 +547,7 @@ function DiscordLib:Window(text)
 	UsernameText.Position = UDim2.new(0.0419999994, 0, 0.154714286, 0)
 	UsernameText.Size = UDim2.new(0, 65, 0, 19)
 	UsernameText.Font = Enum.Font.GothamBold
-	UsernameText.Text = "USERNAME"
+	UsernameText.Text = "ЮЗЕЙРНЕЙМ"
 	UsernameText.TextColor3 = Color3.fromRGB(126, 130, 136)
 	UsernameText.TextSize = 11.000
 	UsernameText.TextXAlignment = Enum.TextXAlignment.Left
@@ -1094,7 +1094,7 @@ function DiscordLib:Window(text)
 	MyAccountBtnTitle.Position = UDim2.new(0.0759999976, 0, -0.166999996, 0)
 	MyAccountBtnTitle.Size = UDim2.new(0, 95, 0, 39)
 	MyAccountBtnTitle.Font = Enum.Font.GothamSemibold
-	MyAccountBtnTitle.Text = "My Account"
+	MyAccountBtnTitle.Text = "Мой Аккаунт"
 	MyAccountBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 	MyAccountBtnTitle.TextSize = 14.000
 	MyAccountBtnTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -1132,7 +1132,7 @@ function DiscordLib:Window(text)
 	CurrentSettingOpen.Position = UDim2.new(1.07294846, 0, 0.0450000018, 0)
 	CurrentSettingOpen.Size = UDim2.new(0, 65, 0, 19)
 	CurrentSettingOpen.Font = Enum.Font.GothamBlack
-	CurrentSettingOpen.Text = "MY ACCOUNT"
+	CurrentSettingOpen.Text = "МОЙ АККАУНТ"
 	CurrentSettingOpen.TextColor3 = Color3.fromRGB(255, 255, 255)
 	CurrentSettingOpen.TextSize = 14.000
 	CurrentSettingOpen.TextXAlignment = Enum.TextXAlignment.Left
@@ -1246,7 +1246,7 @@ function DiscordLib:Window(text)
 		Text1.Position = UDim2.new(-0.000594122568, 0, 0.0202020202, 0)
 		Text1.Size = UDim2.new(0, 346, 0, 68)
 		Text1.Font = Enum.Font.GothamSemibold
-		Text1.Text = "Change your username"
+		Text1.Text = "Изменить свой юзернейм"
 		Text1.TextColor3 = Color3.fromRGB(255, 255, 255)
 		Text1.TextSize = 20.000
 
@@ -1257,7 +1257,7 @@ function DiscordLib:Window(text)
 		Text2.Position = UDim2.new(-0.000594122568, 0, 0.141587839, 0)
 		Text2.Size = UDim2.new(0, 346, 0, 63)
 		Text2.Font = Enum.Font.Gotham
-		Text2.Text = "Enter your new username."
+		Text2.Text = "Введи новый юзернейм"
 		Text2.TextColor3 = Color3.fromRGB(171, 172, 176)
 		Text2.TextSize = 14.000
 
