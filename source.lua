@@ -593,7 +593,7 @@ function DiscordLib:Window(text)
 	EditBtn.Position = UDim2.new(0.797671914, 0, 0.232142866, 0)
 	EditBtn.Size = UDim2.new(0, 55, 0, 30)
 	EditBtn.Font = Enum.Font.Gotham
-	EditBtn.Text = "Изменить"
+	EditBtn.Text = "Сменить"
 	EditBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
 	EditBtn.TextSize = 14.000
 	EditBtn.AutoButtonColor = false
