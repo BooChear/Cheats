@@ -1692,7 +1692,7 @@ function DiscordLib:Window(text)
 		ServerIco.Image = ""
 
 		local ServerIcoCorner = Instance.new("UICorner")
-		ServerIcoCorner.CornerRadius = UDim.new(1, 0)
+		ServerIcoCorner.CornerRadius = UDim.new(0.8, 0)
 		ServerIcoCorner.Name = "ServerIcoCorner"
 		ServerIcoCorner.Parent = ServerIco
 		
@@ -1703,7 +1703,7 @@ function DiscordLib:Window(text)
 		ServerWhiteFrame.Position = UDim2.new(-0.347378343, 0, 0.502659559, 0)
 		ServerWhiteFrame.Size = UDim2.new(0, 11, 0, 10)
 
-		ServerWhiteFrameCorner.CornerRadius = UDim.new(0.8, 0)
+		ServerWhiteFrameCorner.CornerRadius = UDim.new(1, 0)
 		ServerWhiteFrameCorner.Name = "ServerWhiteFrameCorner"
 		ServerWhiteFrameCorner.Parent = ServerWhiteFrame
 		ServersHold.CanvasSize = UDim2.new(0, 0, 0, ServersHoldLayout.AbsoluteContentSize.Y)
