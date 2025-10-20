@@ -660,7 +660,7 @@ function DiscordLib:Window(text)
 	ChangeAvatarText.BackgroundTransparency = 1.000
 	ChangeAvatarText.Size = UDim2.new(0, 71, 0, 71)
 	ChangeAvatarText.Font = Enum.Font.GothamBold
-	ChangeAvatarText.Text = "CHAGNE    AVATAR"
+	ChangeAvatarText.Text = "СМЕНИТЬ    АВАТАР"
 	ChangeAvatarText.TextColor3 = Color3.fromRGB(255, 255, 255)
 	ChangeAvatarText.TextSize = 11.000
 	ChangeAvatarText.TextWrapped = true
@@ -781,7 +781,7 @@ function DiscordLib:Window(text)
 		Text1.Position = UDim2.new(-0.000594122568, 0, 0.0202020202, 0)
 		Text1.Size = UDim2.new(0, 346, 0, 68)
 		Text1.Font = Enum.Font.GothamSemibold
-		Text1.Text = "Change your avatar"
+		Text1.Text = "Смена вашего аватара"
 		Text1.TextColor3 = Color3.fromRGB(255, 255, 255)
 		Text1.TextSize = 20.000
 
@@ -792,7 +792,7 @@ function DiscordLib:Window(text)
 		Text2.Position = UDim2.new(-0.000594122568, 0, 0.141587839, 0)
 		Text2.Size = UDim2.new(0, 346, 0, 63)
 		Text2.Font = Enum.Font.Gotham
-		Text2.Text = "Enter your new profile in a Roblox decal link."
+		Text2.Text = "Укажи ссылку на иконку профиля в формате decal ID"
 		Text2.TextColor3 = Color3.fromRGB(171, 172, 176)
 		Text2.TextSize = 14.000
 
@@ -837,7 +837,7 @@ function DiscordLib:Window(text)
 		ChangeBtn.Position = UDim2.new(0.749670506, 0, 0.823232353, 0)
 		ChangeBtn.Size = UDim2.new(0, 76, 0, 27)
 		ChangeBtn.Font = Enum.Font.Gotham
-		ChangeBtn.Text = "Change"
+		ChangeBtn.Text = "Сменить"
 		ChangeBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
 		ChangeBtn.TextSize = 13.000
 		ChangeBtn.AutoButtonColor = false
@@ -912,7 +912,7 @@ function DiscordLib:Window(text)
 		CloseBtn1.Position = UDim2.new(0.495000005, 0, 0.823000014, 0)
 		CloseBtn1.Size = UDim2.new(0, 76, 0, 27)
 		CloseBtn1.Font = Enum.Font.Gotham
-		CloseBtn1.Text = "Close"
+		CloseBtn1.Text = "Закрыть"
 		CloseBtn1.TextColor3 = Color3.fromRGB(255, 255, 255)
 		CloseBtn1.TextSize = 13.000
 
@@ -927,7 +927,7 @@ function DiscordLib:Window(text)
 		ResetBtn.Position = UDim2.new(0.260895967, 0, 0.823000014, 0)
 		ResetBtn.Size = UDim2.new(0, 76, 0, 27)
 		ResetBtn.Font = Enum.Font.Gotham
-		ResetBtn.Text = "Reset"
+		ResetBtn.Text = "Вернуть"
 		ResetBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
 		ResetBtn.TextSize = 13.000
 		
@@ -1106,7 +1106,7 @@ function DiscordLib:Window(text)
 	SettingsTitle.Position = UDim2.new(0.308999985, 0, 0.0450000018, 0)
 	SettingsTitle.Size = UDim2.new(0, 65, 0, 19)
 	SettingsTitle.Font = Enum.Font.GothamBlack
-	SettingsTitle.Text = "SETTINGS"
+	SettingsTitle.Text = "НАСТРОЙКИ"
 	SettingsTitle.TextColor3 = Color3.fromRGB(142, 146, 152)
 	SettingsTitle.TextSize = 11.000
 	SettingsTitle.TextXAlignment = Enum.TextXAlignment.Left
@@ -1333,7 +1333,7 @@ function DiscordLib:Window(text)
 		ChangeBtn.Position = UDim2.new(0.749670506, 0, 0.823232353, 0)
 		ChangeBtn.Size = UDim2.new(0, 76, 0, 27)
 		ChangeBtn.Font = Enum.Font.Gotham
-		ChangeBtn.Text = "Change"
+		ChangeBtn.Text = "Сменить"
 		ChangeBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
 		ChangeBtn.TextSize = 13.000
 		ChangeBtn.AutoButtonColor = false
@@ -1413,7 +1413,7 @@ function DiscordLib:Window(text)
 		CloseBtn1.Position = UDim2.new(0.495000005, 0, 0.823000014, 0)
 		CloseBtn1.Size = UDim2.new(0, 76, 0, 27)
 		CloseBtn1.Font = Enum.Font.Gotham
-		CloseBtn1.Text = "Close"
+		CloseBtn1.Text = "Закрыть"
 		CloseBtn1.TextColor3 = Color3.fromRGB(255, 255, 255)
 		CloseBtn1.TextSize = 13.000
 
