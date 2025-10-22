@@ -2593,6 +2593,20 @@ function DiscordLib:Window(text)
 				local DropItemHolder = Instance.new("ScrollingFrame")
 				local DropItemHolderLayout = Instance.new("UIListLayout")
 
+				DropItemHolder.InputChanged:Connect(function(input)
+				    if input.UserInputType == Enum.UserInputType.MouseWheel then
+				        local scrollSpeed = 10
+				        DropItemHolder.CanvasPosition = Vector2.new(
+				            DropItemHolder.CanvasPosition.X,
+				            math.clamp(
+				                DropItemHolder.CanvasPosition.Y - input.Position.Z * scrollSpeed,
+				                0,
+				                DropItemHolder.CanvasSize.Y.Offset - DropItemHolder.AbsoluteSize.Y
+				            )
+				        )
+				    end
+				end)
+				
 				DropdownFrameMainOutline.Name = "DropdownFrameMainOutline"
 				DropdownFrameMainOutline.Parent = DropdownTitle
 				DropdownFrameMainOutline.BackgroundColor3 = Color3.fromRGB(37, 40, 43)
@@ -2671,7 +2685,7 @@ function DiscordLib:Window(text)
 					elseif itemcount == 2 then
 						framesize = 58
 					elseif itemcount >= 3 then
-						framesize = 87
+						framesize = 200
 					end
 					
 					local Item = Instance.new("TextButton")
@@ -2758,11 +2772,11 @@ function DiscordLib:Window(text)
 					itemcount = itemcount + 1
 
 					if itemcount == 1 then
-						framesize = 29
+					    framesize = 50
 					elseif itemcount == 2 then
-						framesize = 58
+					    framesize = 100
 					elseif itemcount >= 3 then
-						framesize = 87
+					    framesize = 200
 					end
 
 					local Item = Instance.new("TextButton")
