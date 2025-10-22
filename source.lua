@@ -2684,8 +2684,16 @@ function DiscordLib:Window(text)
 						framesize = 29
 					elseif itemcount == 2 then
 						framesize = 58
-					elseif itemcount >= 3 then
-						framesize = 200
+					elseif itemcount == 3 then
+						framesize = 87
+					elseif itemcount == 4 then
+						framesize = 116
+				    elseif itemcount == 5 then
+						framesize = 145
+			    	elseif itemcount == 6 then
+						framesize = 174
+					elseif itemcount >= 7 then
+						framesize = 203
 					end
 					
 					local Item = Instance.new("TextButton")
@@ -2770,15 +2778,23 @@ function DiscordLib:Window(text)
 				
 				function DropFunc:Add(textadd)
 					itemcount = itemcount + 1
-
+					
 					if itemcount == 1 then
-					    framesize = 50
+						framesize = 50
 					elseif itemcount == 2 then
-					    framesize = 100
-					elseif itemcount >= 3 then
-					    framesize = 200
+						framesize = 100
+					elseif itemcount == 3 then
+						framesize = 150
+					elseif itemcount == 4 then
+						framesize = 200
+				    elseif itemcount == 5 then
+						framesize = 250
+			    	elseif itemcount == 6 then
+						framesize = 300
+					elseif itemcount >= 7 then
+						framesize = 350
 					end
-
+					
 					local Item = Instance.new("TextButton")
 					local ItemCorner = Instance.new("UICorner")
 					local ItemText = Instance.new("TextLabel")
